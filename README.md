@@ -15,9 +15,9 @@ Otherwise just copy-paste everything from [plugin/bracketed-paste.vim](https://g
 Usage
 =====
 
-You need to be using a modern xterm-compatible terminal emulator (xterm, urxvt, and iTerm2 are known to work, there are probably more) that supports [bracketed paste mode](http://www.xfree86.org/current/ctlseqs.html#The Alternate Screen Buffer).
+You need to be using a modern xterm-compatible terminal emulator (xterm, urxvt, and iTerm2 are known to work, and modern gnome-terminal should too) that supports [bracketed paste mode](http://cirw.in/blog/bracketed-paste).
 
-Then whenever you paste into your terminal emulator using `command+v` or `shift+insert`, vim will automatically `set paste` for you.
+Then whenever you paste into your terminal emulator using `command+v` or `shift+insert`, vim will automatically `:set paste` for you.
 
 Credit
 ======
