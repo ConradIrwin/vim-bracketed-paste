@@ -2,7 +2,7 @@
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
 " Docs on bracketed paste mode:
 " http://www.xfree86.org/current/ctlseqs.html
-if &term =~ "xterm.*"
+if &term =~ "xterm.*" || &term =~ "screen*"
   let &t_ti = &t_ti . "\e[?2004h"
   let &t_te = "\e[?2004l" . &t_te
   function! XTermPasteBegin(ret)
