@@ -3,6 +3,7 @@
 " then https://coderwall.com/p/if9mda
 " and then https://github.com/aaronjensen/vimfiles/blob/59a7019b1f2d08c70c28a41ef4e2612470ea0549/plugin/terminaltweaks.vim
 " to fix the escape time problem with insert mode.
+"
 " Docs on bracketed paste mode:
 " http://www.xfree86.org/current/ctlseqs.html
 " Docs on mapping fast escape codes in vim
@@ -23,7 +24,7 @@ if &term =~ "xterm.*" || &term =~ "screen*"
   let &t_EI .= WrapForTmux("\<Esc>[?2004l")
 
   function! XTermPasteBegin(ret)
-    set pastetoggle=<Esc>[201~
+    set pastetoggle=<f29>
     set paste
     return a:ret
   endfunction
