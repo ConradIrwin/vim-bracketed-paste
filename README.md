@@ -1,4 +1,4 @@
-vim-bracketed-paste enables transparent pasting into vim. (i.e. no more `set paste`!)
+vim-bracketed-paste enables transparent pasting into vim. (i.e. no more `:set paste!`)
 
 Installation
 ============
@@ -15,9 +15,9 @@ Otherwise just copy-paste everything from [plugin/bracketed-paste.vim](https://g
 Usage
 =====
 
-You need to be using a modern xterm-compatible terminal emulator (xterm, urxvt, and iTerm2 are known to work, and modern gnome-terminal should too) that supports [bracketed paste mode](http://cirw.in/blog/bracketed-paste).
+You need to be using a modern xterm-compatible terminal emulator that supports [bracketed paste mode](http://cirw.in/blog/bracketed-paste). xterm, urxvt, iTerm2, gnome-terminal (and other terminals using libvte) are known to work, just make sure `$TERM` variable is set correctly. If your `$TERM` value is not recognized by the plugin, please send a pull request.
 
-Then whenever you paste into your terminal emulator using `command+v` or `shift+insert`, vim will automatically `:set paste` for you.
+Then whenever you are in the *insert mode* and paste into your terminal emulator using `command+v`, `shift+insert`, `ctrl+shift+v` or `middle-click`, vim will automatically `:set paste` for you.
 
 Credit
 ======
