@@ -8,7 +8,7 @@
 " http://www.xfree86.org/current/ctlseqs.html
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
-if &term =~ "xterm.*" || &term =~ "screen*"
+if &term =~ "xterm.*" || &term =~ "screen*" || &term =~ "rxvt*"
   function! WrapForTmux(s)
     if !exists('$TMUX')
       return a:s
