@@ -15,7 +15,7 @@ Otherwise just copy-paste everything from [plugin/bracketed-paste.vim](https://g
 Usage
 =====
 
-You need to be using a modern xterm-compatible terminal emulator that supports [bracketed paste mode](http://cirw.in/blog/bracketed-paste). xterm, urxvt, iTerm2, gnome-terminal (and other terminals using libvte) are known to work, just make sure `$TERM` variable is set correctly. If your `$TERM` value is not recognized by the plugin, please send a pull request.
+You need to be using a modern xterm-compatible terminal emulator that supports [bracketed paste mode](http://cirw.in/blog/bracketed-paste). xterm, urxvt, iTerm2, gnome-terminal (and other terminals using libvte) are known to work.
 
 Then whenever you are in the *insert mode* and paste into your terminal emulator using `command+v`, `shift+insert`, `ctrl+shift+v` or `middle-click`, vim will automatically `:set paste` for you.
 
