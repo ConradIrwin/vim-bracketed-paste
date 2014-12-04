@@ -9,7 +9,7 @@
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
 function! WrapForTmux(s)
-  if !exists('$TMUX')
+  if empty('$TMUX')
     return a:s
   endif
 
