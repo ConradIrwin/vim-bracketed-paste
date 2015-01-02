@@ -8,8 +8,13 @@
 " http://www.xfree86.org/current/ctlseqs.html
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
+
+if !exists("g:bracketed_paste_tmux_wrap")
+  let g:bracketed_paste_tmux_wrap = 1
+endif
+
 function! WrapForTmux(s)
-  if !exists('$TMUX')
+  if !g:bracketed_paste_tmux_wrap || !exists('$TMUX')
     return a:s
   endif
 
