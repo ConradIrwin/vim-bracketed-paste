@@ -3,7 +3,7 @@ vim-bracketed-paste enables transparent pasting into vim. (i.e. no more `:set pa
 Installation
 ============
 
-I recommend using [pathogen](https://github.com/tpope/pathogen). Once you have installed pathogen:
+I recommend using [pathogen](https://github.com/tpope/vim-pathogen). Once you have installed pathogen:
 
 ```bash
 cd ~/.vim/bundle
