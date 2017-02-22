@@ -14,7 +14,7 @@ if !exists("g:bracketed_paste_tmux_wrap")
 endif
 
 function! WrapForTmux(s)
-  if !g:bracketed_paste_tmux_wrap || !exists('$TMUX') || system('tmux -V')[5] >= '2'
+  if !g:bracketed_paste_tmux_wrap || !exists('$TMUX')
     return a:s
   endif
 
