@@ -9,8 +9,8 @@
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
 
-let &t_ti .= "\<Esc>[?2004h"
-let &t_te .= "\<Esc>[?2004l"
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
 
 function! XTermPasteBegin(ret)
   set pastetoggle=<f29>
