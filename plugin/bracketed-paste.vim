@@ -9,10 +9,6 @@
 " Docs on mapping fast escape codes in vim
 " http://vim.wikia.com/wiki/Mapping_fast_keycodes_in_terminal_Vim
 
-if !exists("g:bracketed_paste_tmux_wrap")
-  let g:bracketed_paste_tmux_wrap = 1
-endif
-
 let &t_ti .= "\<Esc>[?2004h"
 let &t_te .= "\<Esc>[?2004l"
 
